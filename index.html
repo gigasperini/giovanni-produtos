@@ -1,0 +1,66 @@
+<!-- Início da nossa estrutura para a página de cadastro de produtos
+Giovanni Gasperini - Teste para vaga de Estágio de Desenvolvimento Oak Tecnologia
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Cadastros & Listagens de Produtos, Cadastre Produtos, Oak Tecnologia">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cadastros & Listagens de Produtos</title>
+</head>
+
+<body>
+    
+    <main class="container">
+        <img class="logo" src="assets/logo.png" alt="Logo do site de Listagens de Produtos" />
+        <h1 class="title">Cadastre seu produto agora mesmo!</h1>
+
+        <form onsubmit="cadastrarProduto(event)" class="form">
+            <label>Nome do Produto:</label>
+            <input id="nomeProduto" class="input" type="text" placeholder="Ex: Jaqueta" required />
+
+            <label>Descrição do Produto:</label>
+            <input id="descricaoProduto" class="input" type="text" placeholder="É uma jaqueta de couro e está em boas condições..." required />
+
+            <label>Preço do Produto:</label>
+            <input id="precoProduto" class="input" type="number" placeholder="120.99" min="0" step="0.01" required />
+
+            <label>Disponível para venda:</label>
+            <select id="disponivelProduto" class="input">
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <input class="button" type="submit" value="Cadastrar Produto" />
+        </form>
+
+
+        <h2>Listagem de Produtos</h2>
+        <table id="listaProdutos" class="table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Disponível</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela"></tbody>    
+        </table>
+
+        <button onclick="exibirFormulario()" class="button">Cadastrar Novo Produto</button>
+
+        <footer>Feito com ❤️ por <a href="https://www.linkedin.com/in/giovanni-gasperini/">Giovanni Gasperini</a> </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

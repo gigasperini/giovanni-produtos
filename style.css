@@ -1,0 +1,106 @@
+/* Início da nossa estilização da página de cadastro de produtos
+ Giovanni Gasperini - Teste para vaga de Estágio de Desenvolvimento Oak Tecnologia
+ */
+
+*{
+    margin: 0 auto;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #22272e;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 34px;
+    margin: 0 20px;
+}
+
+.logo{
+    max-width: 500px;
+}
+
+.title{
+    text-align: center;
+    color: #FFF;
+    margin: 24px 0;
+}
+
+.form label{
+    color: #FFF;
+    font-size: 20px;
+}
+
+.input{
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 0 14px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.button{
+    width: 100%;
+    height: 48px;
+    background-color: #119cea;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-color:#119cea;
+    color: #FFF;
+
+}
+
+.table {    
+    width: 100%;
+    margin-top: 24px;
+    border-collapse: collapse;
+    background-color: #FFF;
+    border: 1px solid #444;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #666;
+}
+
+.table th {
+    background-color: #444;
+    color: #FFF;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #666;
+}
+
+.table tbody tr:hover {
+    background-color: #666;
+}
+
+footer, a {
+    color: #FFF;
+    margin-top: 20px;
+}
